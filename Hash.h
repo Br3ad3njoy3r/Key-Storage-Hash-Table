@@ -14,12 +14,13 @@ using namespace std;
     float val2;
 };*/
 
-class jump_off_bridge
+class key_list
 {
     public:
-        jump_off_bridge();
-    private:
         string key;
+        key_list();
+        void add(string, int); 
+    private:
         float x;
         float y;
         string color;
@@ -27,11 +28,22 @@ class jump_off_bridge
         float val2;
 };
 
-class key_table
+key_list::key_list()
 {
-    public:
-        key_table();
-    private:
-        int key_count;
-        vector<jump_off_bridge> key_list;
-};
+    //I'm not sure it needs anything in here?
+}
+
+//I'm pretty sure this is all redundant
+// class key_table 
+// {
+//     public:
+//         key_table();
+//         vector<jump_off_bridge> key_list;
+//     private:
+//         int key_count;
+        
+// };
+// key_table::key_table()
+// {
+//     key_count=0;
+// }
